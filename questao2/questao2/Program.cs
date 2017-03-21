@@ -13,24 +13,34 @@ namespace questao2
     {
         static void Main(string[] args)
         {
-            int n, width, i, j;
+            int numero, largura;
+
 
             Console.WriteLine("type a number: ");
-            n = Convert.ToInt16(Console.ReadLine());
+            numero = Convert.ToInt16(Console.ReadLine());
 
-            Console.WriteLine("type a width");
-            width = Convert.ToInt16(Console.ReadLine());
+            Console.WriteLine("type a largura");
+            largura = Convert.ToInt16(Console.ReadLine());
 
+            Console.WriteLine("------------------------------------");
 
-            for (j = 1; j <= width; j++)
+            int altura = largura;
+            //para altura
+            for (int linha = 0; linha<= largura; linha++)
             {
-                Console.WriteLine($"{n}");
                 
-                for(i=1; i<=width; i++)
+                for(int column = 0; column <=largura ; column++)
                 {
-                    Console.Write($"{n}");
+                    Console.Write($"{numero}");
                 }
+
+                Console.WriteLine();
+                largura--;
+                               
             }
+
+
+            
 
 
             Console.ReadLine();
@@ -39,3 +49,12 @@ namespace questao2
     }
 }
 
+
+/*
+666666                                                      
+66666                                                           
+6666                                                                  
+666                                                        
+66                                                                  
+6
+*/
